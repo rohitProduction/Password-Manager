@@ -3,11 +3,12 @@ import passwordEncrypt
 
 class DB():
     def __init__(self):
+        # Create your own database and add config here
         self.con = psycopg2.connect(
             host = "localhost",
             database = "PasswordManagerDB",
             user = "postgres",
-            password = "Battlefront7!"
+            password = "******"
             )
         self.cur = self.con.cursor()
 
